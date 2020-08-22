@@ -1,5 +1,7 @@
 # HillSafari
 A Fully Responsive Static Website For Promoting Tourism In Hills Like Uttrakhand🌄
+Due to no of files limit in github im only uploading my sass, html and package.json file.
+You can visit https://hillsafari.000webhostapp.com/ to have a first look at my work. Thanks!!
 
 ## Himsafar🏕️
 Pack your bags. We’re going on vacation!
