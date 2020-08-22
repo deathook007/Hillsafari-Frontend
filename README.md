@@ -1,7 +1,7 @@
 # HillSafari
 A Fully Responsive Static Website For Promoting Tourism In Hills Like Uttrakhand🌄
 
-Due to number of files limit in github im only uploading my sass, html and package.json file.
+'Due to file size limit a video is not uploaded in repo'
 You can visit https://hillsafari.000webhostapp.com/ to have a first look at my work. Thanks!!
 
 ## Himsafar🏕️
