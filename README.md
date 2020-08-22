@@ -33,7 +33,13 @@ Reusable and redable code for every element.
 Cross-browser compatibility.
 
 ### Make changes 
-Clone the repo and install npm ">npm install" 
+Clone the repo and install npm 
+Some basic commands are:
+```
+npm install
+npm run start
+npm run build:css
+```
 There are loot of things and improvements required! further looking to work on another big project as a whole "frontend+backend"
 
 
