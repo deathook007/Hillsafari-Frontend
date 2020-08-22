@@ -43,6 +43,7 @@ npm install
 npm run start
 npm run build:css
 ```
-There are loot of things and improvements required! further looking to work on another big project as a whole "frontend+backend"
+#### There are loot of things and improvements required:
+Working on js for nav-bar and nodde-js, mongoose and mongo-db for back end to work on another big project as a whole "frontend+backend"
 
 
