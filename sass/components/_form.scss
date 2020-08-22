@@ -1,0 +1,117 @@
+.form {
+    &_input {
+        font-size: 1.5rem;
+        // Input box not inherit font and color automatically
+        font-family: inherit;
+        color: inherit;
+        padding: 1.3rem 2rem;
+        border-radius: .3rem;
+        border: .3rem solid $color-gray;
+        background-color: rgba($color-white, .8);
+        border: none;
+        // Since at focus we have border at bottom for keybord users therfore to remove bottom displacement
+        border-bottom: .3rem solid transparent;
+        width: 90%;
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
+        // Have its own line with block
+        display: block;
+        transition: all .3s;
+        // When input box are at focus clicked
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 3rem rgba($color-black, .15);
+            border-bottom: .3rem solid $color-main;
+            &:invalid {
+                border-bottom: .3rem solid red
+            }
+        }
+        // New css property for input box
+        &::-webkit-input-placeholder {
+            color: $color-gray;
+        }
+    }
+    &_label {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: 2rem;
+        margin-top: .8rem;
+        display: block;
+        // Transition of placeholder-shown property
+        transition: all .3s;
+        @include respond(phone) {
+            font-size: 1rem;
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+    // **This new css property implies when placeholder is shown on form_input then style form_label**
+    // & is not used since label is not a child element of input therefore we have to use +(Adjecentsibling   // selector) If there are move levels between then we use general sibling selector(~)
+    &_input:placeholder-shown+&_label {
+        // label opacity is 0 it is there but not visible
+        opacity: 0;
+        // Due to visiblity hidden element is gone not present there 
+        // We dont use direct visiblity hidden bcs we cannot animate it but we can animate opacity
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    &_radio-group {
+        width: 49%;
+        display: inline-block;
+        @include respond(phone) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+    &_radio-label {
+        font-size: $font-default;
+        // To point like a link
+        cursor: pointer;
+        // Position relative to new made radio-button
+        position: relative;
+        padding-top: .2rem;
+        padding-left: 3.8rem;
+    }
+    // To hide orignal check box
+    &_radio-input {
+        display: none;
+    }
+    &_radio-button {
+        // To fit side by side also can use float
+        display: inline-block;
+        // Absolute with relative to radio-label
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2.2rem;
+        width: 2.2rem;
+        border: .2rem solid $color-main;
+        border-radius: 50%;
+        @include respond(phone) {
+            top: .2rem;
+            height: 2rem;
+            width: 2rem;
+        }
+        &::after {
+            // Content and display are compalsary with ::after
+            content: "";
+            display: block;
+            height: 1.2rem;
+            width: 1.2rem;
+            border-radius: 50%;
+            @include center;
+            background-color: $color-main;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+    }
+    // Checket sudo class for radio button 
+    // As soon as radio-input is checked select its sibling radio-level and its child radio-button::after 
+    &_radio-input:checked~&_radio-label &_radio-button::after {
+        opacity: 1;
+    }
+}

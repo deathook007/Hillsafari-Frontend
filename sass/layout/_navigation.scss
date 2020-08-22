@@ -1,0 +1,165 @@
+.navigation {
+    font-family: 'Open Sans', sans-serif;
+    &_checkbox {
+        display: none;
+    }
+    &_button {
+        position: fixed;
+        top: 1rem;
+        right: 3rem;
+        background-color: $color-white;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 20;
+        // Standard values used
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        cursor: pointer;
+        // For icon positioning
+        text-align: center;
+        @include respond(tab-port) {
+            top: 1rem;
+            right: 1rem;
+        }
+        @include respond(phone) {
+            top: .5rem;
+            right: .5rem;
+        }
+    }
+    &_background {
+        position: fixed;
+        top: 1.2rem;
+        right: 3.2rem;
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        background-image: radial-gradient($color-card1-light, $color-card1-dark);
+        z-index: 10;
+        transition: transform .6s cubic-bezier(0.88, 0, 0.08, 1);
+        // For testing purpose only transform: scale(80);
+        @include respond(tab-port) {
+            top: 1.3rem;
+            right: 1.3rem;
+        }
+        @include respond(phone) {
+            top: .8rem;
+            right: .8rem;
+        }
+    }
+    &_nav {
+        height: 100vh;
+        //width: 100%;
+        position: fixed;
+        top: 0;
+        // right looks more better thn right one
+        right: 0;
+        //left: 0;
+        z-index: 15;
+        // To hide the navigation menu but link will be still there to fix we use width as 0
+        opacity: 0;
+        width: 0;
+        // Here we have to animate width and opacity i.e all only while page opens with custom transition
+        transition: all .6s cubic-bezier(0.68, -0.55, 0.265, 1.58);
+    }
+    &_list {
+        @include center;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+    // Distance btw two items
+    &_item {
+        margin: 1rem;
+    }
+    &_link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            // Important
+            padding: 1rem 2rem;
+            font-size: 3rem;
+            font-weight: 100;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color-white;
+            // Item animation solid gradient
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+            // Entire thing shift right side and is invisible since it is empty
+            background-size: 220%;
+            transition: all .4s;
+            // For span
+            span {
+                display: inline-block;
+                margin-right: 1.5rem;
+            }
+        }
+        &:hover,
+        &:active {
+            // Background now shift to left side to 100%
+            background-position: 100%;
+            color: $color-main;
+            transform: translateX(1rem);
+        }
+    }
+    // Navigation functionality
+    // Backgroungd is a sibling
+    &_checkbox:checked~&_background {
+        transform: scale(80);
+    }
+    // checkbox is a sibling and we want opacity and width to normal
+    &_checkbox:checked~&_nav {
+        opacity: 1;
+        width: 100%;
+    }
+    // Icon 
+    &_icon {
+        // Margin to settle icon down
+        margin-top: 2.5rem;
+        // Relative from icon 
+        position: relative;
+        // These three share common properties, we have 3 copies of same element
+        &,
+        &::before,
+        &::after {
+            width: 2.6rem;
+            height: .2rem;
+            background-color: $color-gray;
+            display: inline-block;
+        }
+        &::before,
+        &::after {
+            content: "";
+            // Relative to icon
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+        &::before {
+            top: -.6rem;
+            // **transform-origin another property to change origne of transformation, note positons on hover
+        }
+        &::after {
+            top: .6rem;
+        }
+    }
+    &_button:hover &_icon::before {
+        top: -.8rem;
+    }
+    &_button:hover &_icon::after {
+        top: .8rem;
+    }
+    &_checkbox:checked+&_button &_icon {
+        // To make element invisible
+        background-color: transparent;
+    }
+    &_checkbox:checked+&_button &_icon::before {
+        // Top 0 to make them again come in middle
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &_checkbox:checked+&_button &_icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

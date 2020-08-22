@@ -1,0 +1,88 @@
+body {
+    /* Include the basic font to all website content */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: $font-default;
+    line-height: 1.7;
+    /* Basic text color */
+    color: $color-gray;
+}
+
+.heading {
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: solid;
+    /* Some time the box having animation applied shakes at the end_to fix */
+    backface-visibility: hidden;
+    margin-bottom: 15rem;
+    /* Make the text box responsive and aling to centre always */
+    &-pri {
+        display: block;
+        font-size: 5.5rem;
+        font-weight: bold;
+        letter-spacing: 2rem;
+        /* Adding stokes of same color to text */
+        -webkit-text-stroke-width: .1rem;
+        -webkit-text-stroke-color: $color-white;
+        /* Using animation  */
+        animation-name: moveinleft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        @include respond(phone) {
+            font-size: 5rem;
+            letter-spacing: 1rem;
+        }
+    }
+    &-sec {
+        display: block;
+        font-size: $font-default;
+        font-weight: 600;
+        letter-spacing: .8rem;
+        -webkit-text-stroke-width: .01rem;
+        -webkit-text-stroke-color: $color-white;
+        /* Using animation  */
+        animation-name: moveinright;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        @include respond(tab-port) {
+            letter-spacing: .7rem;
+        }
+        @include respond(phone) {
+            letter-spacing: .3rem;
+        }
+    }
+    &-ter {
+        display: block;
+        font-size: $font-default;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+}
+
+.section-heading {
+    display: inline-block;
+    text-transform: uppercase;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, $color-heading-primary, $color-heading-secondary);
+    // gradient goes behind text
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include respond(tab-port) {
+        font-size: 2.5rem;
+        letter-spacing: 0;
+    }
+    @include respond(phone) {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+}
+
+.paragraph {
+    font-size: $font-default;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,91 @@
+.button {
+    &,
+    /**<button> tag is different from ancher tak since link and visited are not there & for button only!!**/
+    /* Sudo clase are special states to style under special condition 
+   Link and visited state ate important link state*/
+    &:link,
+    &:visited {
+        /* Since we have to give padding and display as a box also */
+        display: inline-block;
+        /* Sice it's a inline bolck it is treated as text_use text align  */
+        /* Padding desides height and width */
+        padding: 1.8rem 3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bolder;
+        word-spacing: .1rem;
+        border-radius: 20rem;
+        /* To enable all properties to enable for animation */
+        transition: all .2s;
+        position: relative;
+        // Change for <button> tag
+        border: none;
+        cursor: pointer;
+    }
+    &-white {
+        background-color: $color-white;
+        &--basicgreen {
+            color: $color-heading-secondary;
+        }
+        &--basicorange {
+            color: $color-card2-dark;
+        }
+        &--basicblue {
+            color: $color-card3-light;
+        }
+        &::after {
+            background-color: $color-white;
+        }
+    }
+    &-green {
+        background-color: $color-main;
+        color: $color-white;
+        &::after {
+            background-color: $color-main;
+        }
+    }
+    &:hover {
+        transform: translateY(-.3rem);
+        /* Box shadow standard values:hover */
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+        /* When we hover the button we want some certain styles for the after sudo element */
+        &::after {
+            transform: scaleX(1.2) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        // When button tag is focuse apply the same with addition outline: none
+        outline: none;
+        transform: translateY(-.1rem);
+        /* Box shadow standard values:active */
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.4);
+    }
+    &::after {
+        /* Sudo element are treated as chil of main element i.e button */
+        /* Content is necessary */
+        content: "";
+        /* Make this a copy of same button as set behind it */
+        display: inline-block;
+        /* Since parent element is button */
+        height: 100%;
+        width: 100%;
+        border-radius: 20rem;
+        /* Hiding the copy of button behind the main button and refrence should be button*/
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        /* Science its the initial state of element */
+        transition: all .4s;
+    }
+    &-animate {
+        animation-name: moveinbottom;
+        animation-timing-function: ease-out;
+        animation-duration: 2s;
+        animation-delay: .75s;
+        /* Apply initial animations automatically ex hiding button initially */
+        animation-fill-mode: backwards;
+    }
+}

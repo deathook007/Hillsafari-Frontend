@@ -1,0 +1,238 @@
+.comp {
+    //Refrence for image
+    position: relative;
+    &_image {
+        // Images in width are responsive
+        width: 56%;
+        height: 19rem;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        z-index: 1;
+        transition: all .4s;
+        @include respond(tab-port) {
+            float: left;
+            position: relative;
+            width: 33.33%;
+            height: 15rem;
+            box-shadow: 0 1.5rem 3.5rem rgba($color-black, .3);
+        }
+        @include respond(phone) {
+            width: 50%;
+            height: 15rem;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+        &-1 {
+            left: 0rem;
+            top: 0rem;
+            @include respond(tab-port) {
+                top: 5rem;
+                left: -1.2rem;
+                transform: scale(1.4);
+            }
+            @include respond(phone) {
+                top: 5rem;
+                left: -1.2rem;
+                transform: scale(1.4);
+            }
+        }
+        &-2 {
+            left: 7rem;
+            top: 5rem;
+            @include respond(tab-port) {
+                top: 2rem;
+                left: .5rem;
+                transform: scale(1.4);
+            }
+            @include respond(phone) {
+                top: 2rem;
+                left: .5rem;
+                transform: scale(1.4);
+            }
+        }
+        &-3 {
+            left: 14rem;
+            top: 10rem;
+            @include respond(tab-port) {
+                top: 5rem;
+                left: 2.2rem;
+                transform: scale(1.4);
+            }
+            @include respond(phone) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-4 {
+            left: 21rem;
+            top: 15rem;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &:hover {
+            transform: scale(1.25) translateY(-2rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            border-style: solid;
+            border-color: $color-white;
+            z-index: 2;
+            @include respond(tab-port) {
+                transform: scale(1.25) translateY(0);
+                box-shadow: 0 2rem 3rem rgba($color-black, .5);
+            }
+            @include respond(phone) {
+                transform: scale(1.25) translateY(0);
+                box-shadow: 0 1.5rem 2rem rgba($color-black, .5);
+            }
+        }
+    }
+    // To shrink other images size
+    //comp:hover comp_image:not(:hover){}
+    &:hover &_image:not(:hover) {
+        transform: scale(.9);
+    }
+}
+
+.composit {
+    //Refrence for image
+    position: relative;
+    &_image {
+        border-style: solid;
+        border-color: $color-white;
+        position: absolute;
+        z-index: 1;
+        transition: all .3s;
+        &-1 {
+            width: 50%;
+            height: 23rem;
+            top: 0;
+            left: 0;
+            @include respond(tab-port) {
+                width: 100%;
+                height: 29rem;
+                top: 0;
+                left: 0;
+            }
+            @include respond(phone) {
+                width: 100%;
+                height: 26rem;
+                top: 0;
+                left: 0;
+            }
+        }
+        &-2 {
+            width: 50%;
+            height: 23rem;
+            top: 0;
+            left: 50%;
+            @include respond(tab-port) {
+                width: 100%;
+                height: 29rem;
+                top: 29rem;
+                left: 0;
+            }
+            @include respond(phone) {
+                width: 100%;
+                height: 26rem;
+                top: 26rem;
+                left: 0;
+            }
+        }
+        &-3 {
+            width: 60%;
+            height: 40rem;
+            top: 23rem;
+            left: 0;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-4 {
+            width: 20%;
+            height: 20rem;
+            top: 23rem;
+            left: 60%;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-5 {
+            width: 20%;
+            height: 20rem;
+            top: 23rem;
+            left: 80%;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-6 {
+            width: 20%;
+            height: 20rem;
+            top: 43rem;
+            left: 60%;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-7 {
+            width: 20%;
+            height: 20rem;
+            top: 43rem;
+            left: 80%;
+            @include respond(tab-port) {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &-8 {
+            width: 50%;
+            height: 23rem;
+            top: 63rem;
+            left: 0;
+            @include respond(tab-port) {
+                width: 100%;
+                height: 29rem;
+                top: 58rem;
+                left: 0;
+            }
+            @include respond(phone) {
+                width: 100%;
+                height: 26rem;
+                top: 52rem;
+                left: 0;
+            }
+        }
+        &-9 {
+            width: 50%;
+            height: 23rem;
+            top: 63rem;
+            left: 50%;
+            @include respond(tab-port) {
+                width: 100%;
+                height: 29rem;
+                top: 87rem;
+                left: 0;
+            }
+            @include respond(phone) {
+                width: 100%;
+                height: 26rem;
+                top: 78rem;
+                left: 0;
+            }
+        }
+        &:hover {
+            transform: scale(1.2) translateY(-2rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            border-style: groove;
+            border-color: $color-main;
+            @include respond(phone) {
+                border-style: none;
+            }
+            z-index: 2;
+        }
+    }
+}

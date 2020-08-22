@@ -1,0 +1,55 @@
+//VERY IMPORTANT TO GET RID OF WHITE SPACE AT RIGHT SIDE IN RESPONSIVE DESIGH
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+/* Use rem in place of px bcs rem is relation to root size it helps in making web more responsive */
+
+html {
+    /* Implies 1rem=10px root size but px is not a good used practice*/
+    /* Default font size is 16px **10/16=62.5** */
+    font-size: 62.5%;
+    @include respond(tab-land) {
+        //width<1200?
+        font-size: 56.25%; // 1em=9px -> 9/16*100 -> 56.25%
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(big-desk) {
+        font-size: 75%;
+    }
+}
+
+
+/* Basic */
+
+*,
+*::after,
+*::before {
+    /* To provide margin and padding 0 to all including sudo elements */
+    margin: 0;
+    padding: 0;
+    /* If you set box-sizing: border-box; on an element, padding and border are included in the width and height */
+    box-sizing: inherit;
+}
+
+// Body base elements
+body {
+    /* We use inheritance with box sizing for more responsiveness */
+    box-sizing: border-box;
+    /* Padding to have a good box around page */
+    padding: 0;
+}
+
+//  Adding selection text color
+::selection {
+    background-color: rgba($color-main, .9);
+    color: $color-white;
+}

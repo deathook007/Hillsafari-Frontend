@@ -1,0 +1,35 @@
+//Feature section
+.feature-box {
+    // background color of cards used  
+    background-color: rgba($color-white, .9);
+    // Align text
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    // Standard .3 second
+    transition: transform .3s;
+    // Icon Specifications for SVG
+    @include respond(tab-port) {
+        padding: 2.3rem;
+        border-radius: .3rem;
+    }
+    &_icon {
+        margin-bottom: 2rem;
+        height: 6rem;
+        width: 6rem;
+        // Provide id as url for gradient
+        fill: url(#svg-gradient);
+        &--start {
+            // stop-color property to provide gradient colors
+            stop-color: $color-heading-primary;
+        }
+        &--stop {
+            stop-color: $color-main;
+        }
+    }
+    &:hover {
+        // Standard scale 1.03
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}

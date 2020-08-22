@@ -1,0 +1,55 @@
+.header {
+    /* Set height of header so that it dosent left behind of ther div's
+    view hight make images responsive */
+    height: 95vh;
+    /* Insering background image */
+    /* Putting linear gradient in top of image */
+    background-image: linear-gradient(to right, $color-primary, $color-secondary), url(../image/Him-01-small.jpg);
+    // Media queries for responsive images make it support in suffari also using -webkit-min-device-pixel-ratio
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+        background-image: linear-gradient(to right, $color-primary, $color-secondary), url(../image/Him-01.jpg);
+    }
+    /* To fit image inside box completely */
+    background-size: cover;
+    /* To fix image from top when resized window */
+    background-position: top;
+    /* To provide shape-outside x-y axis*/
+    @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    }
+    /* Since header is a parent element so it will be refrence to other child element
+    --IMPORTANT */
+    @include respond(phone) {
+        @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)) {
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        }
+    }
+    position: relative;
+    // Nesting :& implies consicutive parent class name
+    /* Logo box and logo styling */
+    &__logo-box {
+        /* Using absolute positioning with refrence to parent element header(top,left,right,bottom) */
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+    }
+    &__logo {
+        /* Specify height or width any one and the rest will be set automatically */
+        height: 7rem;
+        @include respond(tab-land) {
+            height: 6rem;
+        }
+        @include respond(tab-port) {
+            height: 5rem;
+        }
+    }
+    &__text-box {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

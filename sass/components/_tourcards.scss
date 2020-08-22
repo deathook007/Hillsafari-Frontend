@@ -1,0 +1,200 @@
+.tourcards {
+    // perspective has to be in parent- its gives inside-outcoming effect to card
+    perspective: 150rem;
+    //To run in mozila firefox
+    -moz-perspective: 150rem;
+    // Refrence position
+    position: relative;
+    //This is the only way to fix height with absolute positioning
+    height: 58rem;
+    &_side {
+        height: 58rem;
+        transition: all .8s ease;
+        // Using position refrence
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // To make backside invisibe
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow: hidden;
+        border-radius: .3rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        &-front {
+            background-color: $color-white;
+        }
+        &-back {
+            background-color: green;
+            transform: rotateY(180deg);
+            &--1 {
+                background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark);
+            }
+            &--2 {
+                background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark);
+            }
+            &--3 {
+                background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark);
+            }
+        }
+    }
+    // When we hover the card we want the side to transform
+    &:hover &_side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &_side-back {
+        transform: rotateY(0deg);
+    }
+    //Front card side
+    &_picture {
+        background-size: cover;
+        height: 22rem;
+        // New css property is blend modes like photoshope
+        background-blend-mode: soft-light;
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        &-1 {
+            background-image: linear-gradient(to right bottom, $color-card1-light, $color-card1-dark), url(../image/Forest.png);
+        }
+        &-2 {
+            background-image: linear-gradient(to right bottom, $color-card2-light, $color-card2-dark), url(../image/Sea.jpg);
+        }
+        &-3 {
+            background-image: linear-gradient(to right bottom, $color-card3-light, $color-card3-dark), url(../image/Snow.jpg);
+        }
+    }
+    &_heading {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 14rem;
+        right: 2rem;
+        width: 70%;
+        &-span {
+            padding: 1rem 1.5rem;
+            border-radius: .3rem;
+            //Webkit prefix is important! Without this we have space only in front of the and end of word
+            //With this clone we have padding on both the lines although it is treated as single line text
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            &--1 {
+                background-image: linear-gradient(to right bottom, rgba($color-card1-light, .85), rgba($color-card1-dark, .85));
+            }
+            &--2 {
+                background-image: linear-gradient(to right bottom, rgba($color-card2-light, .85), rgba($color-card2-dark, .85));
+            }
+            &--3 {
+                background-image: linear-gradient(to right bottom, rgba($color-card3-light, .85), rgba($color-card3-dark, .85));
+            }
+        }
+    }
+    &_details {
+        // To shift content to right
+        padding: 2rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            //Simplest way 
+            // Centering a block element inside block element 
+            margin: 0 auto;
+            li {
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: .2rem solid $color-light-gray;
+                }
+            }
+        }
+        &__text {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: $font-default;
+            font-family: 'Lato', sans-serif;
+        }
+        &__icon {
+            height: 2rem;
+            width: 2rem;
+            margin-right: 1rem;
+            // Provide id as url for gradient
+            fill: url(#svg-gradient);
+            &--start {
+                // stop-color property to provide gradient colors
+                stop-color: $color-heading-primary;
+            }
+            &--stop {
+                stop-color: $color-main;
+            }
+        }
+    }
+    // Back card side 
+    &_action {
+        // Same thing we have done in header
+        @include center;
+        text-align: center;
+        width: 90%;
+        &-price {
+            text-align: center;
+            color: $color-white;
+            &--only {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+            &--value {
+                font-size: 6rem;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: lighter;
+                margin-bottom: 10rem;
+            }
+        }
+    }
+    // Adding media query to identify weather user can over over there devices or not as responsive landscapes
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
+        height: auto;
+        border-radius: .3rem;
+        background-color: $color-white;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        &_details {
+            &__text {
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+        }
+        &_side {
+            height: auto;
+            position: relative;
+            border-radius: 0;
+            box-shadow: none;
+            &-back {
+                transform: rotateY(0);
+                clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        // When we hover the card we want the side to transform
+        &:hover &_side-front {
+            transform: rotateY(0);
+        }
+        // Back card side 
+        &_action {
+            // Same thing we have done in header
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+            width: 100%;
+            padding: 4rem;
+            &-price {
+                &--only {
+                    font-size: 2rem;
+                }
+                &--value {
+                    font-size: 5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

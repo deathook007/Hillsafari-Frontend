@@ -1,0 +1,21 @@
+.video {
+    // Absolute positioning relative to parent section-review
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // To brought heading and button above
+    z-index: -1;
+    opacity: .9;
+    //To maintain video overflow
+    overflow: hidden;
+    &_content {
+        // This will not make video fit properly bcs of ascept ratio maintaines
+        height: 100%;
+        width: 100%;
+        // This property make video covering entire parent element maintaining fill ratio
+        //Also work with image
+        object-fit: cover;
+    }
+}

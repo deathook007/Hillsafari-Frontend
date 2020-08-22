@@ -1,0 +1,411 @@
+<!-- 1st create a basic layout of html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- If we dond use name meta tag then out web on mobile be zoom out as origmal with -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Including google lato/open sans font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Linking css file -->
+    <!-- Dont include text/css now for safer area -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hill Safari || Uttrakhand Tourism</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navigate">
+        <label for="navigate" class="navigation_button">
+            <span class="navigation_icon">&nbsp;</span>
+        </label>
+        <!-- &nbsp for blank space -->
+        <div class="navigation_background">&nbsp;</div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <!-- Dont go crazy with divs use span sonetime -->
+                <li class="navigation_item"><a href="#section-about" class="navigation_link"><span>01</span>About Hill Safari</a></li>
+                <li class="navigation_item"><a href="#section-feature" class="navigation_link"><span>02</span>Your Benfits</a></li>
+                <li class="navigation_item"><a href="#section-tour" class="navigation_link"><span>03</span>Popular tours</a></li>
+                <li class="navigation_item"><a href="#section-review" class="navigation_link"><span>04</span>Reviews and Stories</a></li>
+                <li class="navigation_item"><a href="#section-detail" class="navigation_link"><span>05</span>Book now</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Header with class header -->
+    <header class="header" id="header">
+        <!-- Header is the parent element -->
+        <!-- Since image is a inline element put it in a div -->
+        <div class="header__logo-box">
+            <!-- To do changes to image provide the class logo -->
+            <img src="image/logo-only.png" alt="logo" class="header__logo">
+        </div>
+        <!-- After the logo box we have two other boxes for heading and button headding inside text box -->
+        <div class="header__text-box">
+
+            <h1 class="heading">
+                <span class="heading-pri">HIMSAFAR</span>
+                <span class="heading-sec">Go where you feel most alive</span>
+            </h1>
+            <a href="#section-tour" class="button button-white button-white--basicgreen button-animate">Discover our tours</a>
+
+        </div>
+    </header>
+    <main>
+        <!-- About section -->
+        <section class="section-about" id="section-about">
+            <div class="center-uclass marginbottom-large">
+                <h2 class="section-heading">Mountains are calling for ADVANTURE</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h2 class="heading-ter marginbottom-small">About himalyas Hill safari</h2>
+                    <p class="paragraph">The Himalayas are home to some of the most exotic locations in the world, featuring highest peaks on Earth, snow-clad landscapes, beautiful meadows, lakes, rivers and valleys. Uttarakhand and Himanchal Pradesh are one of the most beautiful
+                        northern states of India that enthralls everyone with its spectacularly scenic landscapes.
+                    </p>
+                    <h2 class="heading-ter marginbottom-small">Live advanture like you never have before</h2>
+                    <p class="paragraph">Charming hill stations, quaint villages, winding mountain roads, serpentine rivers, world renowned conservation parks, world heritage sites, waterfalls hurtling down slopes and serene lakes shimmering amidst beautiful towns.<br>Be
+                        it flying like a bird, csing through the strenuous rapids of the Ganges, trekking to some of the fascinating peaks, enjoy the longest cable-car ride in India and much more.
+                    </p>
+                    <a href="#popup" class="button button-green">Read more &rarr;</a>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="comp">
+                        <!-- For responsive images use density and art swithing toogether as follows -->
+                        <!-- <img srcset="img/img-small.jpg 300w, img/img-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo"
+                                 class="class_name"
+                                 src="img/img-default.jpg"> -->
+                        <img src="image/Comp-01.jpg" alt="photo-1" class="comp_image comp_image-1">
+                        <img src="image/Comp-02.jpg" alt="photo-2" class="comp_image comp_image-2">
+                        <img src="image/Comp-03.jpg" alt="photo-3" class="comp_image comp_image-3">
+                        <img src="image/Comp-04.jpg" alt="photo-4" class="comp_image comp_image-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features section -->
+        <section class="section-feature" id="section-feature">
+            <div class="row">
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <!-- Best way of using SVG icons, Works in a live server only -->
+                        <svg class="feature-box_icon">
+                            <use xlink:href="image/Sprite.svg#icon-globe"></use>
+                            <!-- Using SVG gradient-id(As url), offset tells from where to start and end -->
+                            <linearGradient id="svg-gradient">
+                                <stop class="feature-box_icon--start" offset="0%" />
+                                <stop class="feature-box_icon--stop" offset="100%" />
+                            </linearGradient>
+                        </svg>
+                        <h3 class="heading-ter marginbottom-small">Explore world</h3>
+                        <p class="paragraph">Cross every bridge of your insecurities and explore all possibilities. Explore every corner of land.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="feature-box_icon">
+                            <use xlink:href="image/Sprite.svg#icon-map"></use>
+                        </svg>
+                        <h3 class="heading-ter marginbottom-small">Find your way</h3>
+                        <p class="paragraph">Never get lost in ways lost with nature and its wonder. Have a stress free woundering.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="feature-box_icon">
+                            <use xlink:href="image/Sprite.svg#icon-feather"></use>
+                        </svg>
+                        <h3 class="heading-ter marginbottom-small">Meet nature</h3>
+                        <p class="paragraph">In every walk with nature, receive more than you seeks. Discover you by discovering nature.</p>
+                    </div>
+                </div>
+                <div class="col-1-of-4">
+                    <div class="feature-box">
+                        <svg class="feature-box_icon">
+                            <use xlink:href="image/Sprite.svg#icon-heart-outlined"></use>
+                        </svg>
+                        <h3 class="heading-ter marginbottom-small">Live healthy</h3>
+                        <p class="paragraph">Take care of your body. A good laugh and a long sleep are the best cures in the doctor's book.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tours card section -->
+        <section class="section-tour" id="section-tour">
+            <div class="center-uclass marginbottom-large">
+                <h2 class="section-heading">Explore our top-notch tours</h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="tourcards">
+                        <div class="tourcards_side tourcards_side-front">
+                            <div class="tourcards_picture tourcards_picture-2"></div>
+                            <div class="tourcards_heading">
+                                <span class="tourcards_heading-span tourcards_heading-span--2">The lake explorer</span>
+                            </div>
+                            <div class="tourcards_details">
+                                <p class="tourcards_details__text">Exploring some famous lakes by foot and by boats</p>
+                                <ul>
+                                    <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-adjust"></use></svg>3 Days Tour</li>
+                                    <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-add-user"></use></svg>Upto 5 People</li>
+                                    <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-address"></use></svg>2 Tour Guides</li>
+                                    <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-warning"></use></svg>Difficulty - Easy</li>
+                                    <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-location-pin"></use></svg>Locat - Nanital</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tourcards_side tourcards_side-back tourcards_side-back--2">
+                            <div class="tourcards_action">
+                                <div class="tourcards_action-price">
+                                    <p class="tourcards_action-price--only">Only</p>
+                                    <p class="tourcards_action-price--value"><i>$198</i></p>
+                                </div>
+                                <a href="#section-tour" class="button button-white button-white--basicorange">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="tourcards">
+                        <div class="tourcards_side tourcards_side-front">
+                            <div class="tourcards_side tourcards_side-front">
+                                <div class="tourcards_picture tourcards_picture-1"></div>
+                                <div class="tourcards_heading">
+                                    <span class="tourcards_heading-span tourcards_heading-span--1">The forest hiker</span>
+                                </div>
+                                <div class="tourcards_details">
+                                    <p class="tourcards_details__text">Breathtaking hike through the spectacular Birds and Scenes</p>
+                                    <ul>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-adjust"></use></svg>2 Days Tour</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-add-user"></use></svg>Upto 8 People</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-address"></use></svg>3 Tour Guides</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-warning"></use></svg>Difficulty - Medium</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-location-pin"></use></svg>Locat - Pithoragarh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tourcards_side tourcards_side-back tourcards_side-back--1">
+                            <div class="tourcards_action">
+                                <div class="tourcards_action-price">
+                                    <p class="tourcards_action-price--only">Only</p>
+                                    <p class="tourcards_action-price--value"><i>$298</i></p>
+                                </div>
+                                <a href="#section-tour" class="button button-white button-white--basicgreen">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="tourcards">
+                        <div class="tourcards_side tourcards_side-front">
+                            <div class="tourcards_side tourcards_side-front">
+                                <div class="tourcards_picture tourcards_picture-3"></div>
+                                <div class="tourcards_heading">
+                                    <span class="tourcards_heading-span tourcards_heading-span--3">The snow adventure</span>
+                                </div>
+                                <div class="tourcards_details">
+                                    <p class="tourcards_details__text">Exciting adventure in the snow with snowboarding and skiing
+                                    </p>
+                                    <ul>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-adjust"></use></svg>6 Days Tour</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-add-user"></use></svg>Upto 12 People</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-address"></use></svg>5 Tour Guides</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-warning"></use></svg>Difficulty - Hard</li>
+                                        <li><svg class="tourcards_details__icon"><use xlink:href="image/Sprite.svg#icon-location-pin"></use></svg>Locat - Munshyari</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tourcards_side tourcards_side-back tourcards_side-back--3">
+                            <div class="tourcards_action">
+                                <div class="tourcards_action-price">
+                                    <p class="tourcards_action-price--only">Only</p>
+                                    <p class="tourcards_action-price--value"><i>$498</i></p>
+                                </div>
+                                <a href="#section-tour" class="button button-white button-white--basicblue">Details!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-uclass u-margin-top-large">
+                <a href="#section-tour" class="button button-green">Discover all tours</a>
+            </div>
+        </section>
+        <!-- Review section -->
+        <section class="section-review" id="section-review">
+            <!-- Applying bg video ver handly -->
+            <div class="video">
+                <video class="video_content" autoplay muted loop>
+                    <source src="video/Video.mp4" type="video/mp4">
+                    Your browser is not supported!
+                </video>
+            </div>
+            <div class="center-uclass marginbottom-large">
+                <h2 class="section-heading">What clients are saying</h2>
+            </div>
+            <div class="row">
+                <div class="review">
+                    <figure class="review_figure">
+                        <img src="image/Review.jpeg" alt="Tour reviewing person" class="review_image">
+                        <!-- Figcaption is used for giving caption to figures -->
+                        <figcaption class="review_image-cap">Dinesh Sharma</figcaption>
+                    </figure>
+                    <div class="review_content">
+                        <h3 class="heading-ter marginbottom-small">One word: Awsome!</h3>
+                        <p>"What an incredible experience we had with "Hill Safari"! The trip was perfectly organized. The trip was a dream come true. Every step led to a new insights of the old world, and my brilliant guide was always ready with his narration
+                            of the history of the land and people. The 3-course dining and camping were also very good. All in all, this trip from "Hill Safari" was a MUST DO."</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <figure class="review_figure">
+                        <img src="image/Review-2.jpg" alt="Tour reviewing person" class="review_image">
+                        <!-- Figcaption is used for giving caption to figures -->
+                        <figcaption class="review_image-cap">Angela morgan</figcaption>
+                    </figure>
+                    <div class="review_content">
+                        <h3 class="heading-ter marginbottom-small">Amazing!!!</h3>
+                        <p>“We travel....a lot, and this was an epic adventure! What we saw was amazing but even more impressive was the logistics behind our travel. Our trip was flawless. All the transportation and local guides were on time and extremely
+                            nice. Our main guides, Saurav and David were very special people. Wonderfully knowledgeable and went out of their way to make our trip special.”</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-uclass">
+                <a href="#section-review" class="button button-green">Read more</a>
+            </div>
+        </section>
+        <!-- Image section -->
+        <section class="section-image" id="section-image">
+            <div class="center-uclass marginbottom-large">
+                <h2 class="section-heading">Images you may like :)
+                </h2>
+            </div>
+            <div class="row">
+                <div class="composit">
+                    <!-- For responsive images use density and art swithing toogether -->
+                    <img src="image/Uttarakhand-01.jpg" alt="photo-1" class="composit_image composit_image-1">
+                    <img src="image/Uttarakhand-02.jpg" alt="photo-2" class="composit_image composit_image-2">
+                    <img src="image/Uttarakhand-05.jpg" alt="photo-3" class="composit_image composit_image-3">
+                    <img src="image/Uttarakhand-06.jpg" alt="photo-4" class="composit_image composit_image-4">
+                    <img src="image/Uttarakhand-07.jpg" alt="photo-5" class="composit_image composit_image-5">
+                    <img src="image/Uttarakhand-08.jpg" alt="photo-6" class="composit_image composit_image-6">
+                    <img src="image/Uttarakhand-09.jpg" alt="photo-7" class="composit_image composit_image-7">
+                    <img src="image/Uttarakhand-03.jpg" alt="photo-8" class="composit_image composit_image-8">
+                    <img src="image/Uttarakhand-04.jpg" alt="photo-9" class="composit_image composit_image-9">
+                </div>
+            </div>
+            <div class="center-uclass u-margin-top-huge">
+                <button class="button button-green">See more images</button>
+            </div>
+        </section>
+        <!-- Detail section -->
+        <section class="section-detail" id="section-detail">
+            <div class="row">
+                <div class="detailbox">
+                    <div class="detailbox_form">
+                        <form action="#" class="form">
+                            <div class="center-uclass marginbottom-medium">
+                                <h2 class="section-heading">Start booking now!</h2>
+                            </div>
+                            <!-- Form contains div as group of input and label -->
+                            <div class="form_group">
+                                <input type="text" class="form_input" placeholder="Full name" id="name" required>
+                                <label for="name" class="form_label">Full name</label>
+                            </div>
+                            <div class="form_group">
+                                <input type="email" class="form_input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form_label">Email address</label>
+                            </div>
+                            <div class="form_group">
+                                <input type="number" class="form_input" placeholder="Phone number" id="name" required>
+                                <label for="name" class="form_label">Phone no</label>
+                            </div>
+                            <!-- Name attribute should be same to consider them as a group -->
+                            <div class="form_group marginbottom-medium">
+                                <div class="form_radio-group">
+                                    <!-- There is no way to style radio buttons with css therefore we make our buttons as span -->
+                                    <input type="radio" class="form_radio-input" id="small" name="size">
+                                    <label for="small" class="form_radio-label">
+                                        <!-- This span will become our button and then replaced over "input" main button We hide input but still it gets selected -->
+                                        <span class="form_radio-button"></span>
+                                        Small group
+                                    </label>
+                                </div>
+                                <div class="form_radio-group">
+                                    <input type="radio" class="form_radio-input" id="large" name="size">
+                                    <label for="large" class="form_radio-label">
+                                        <span class="form_radio-button"></span>
+                                        Large group
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- In form we need button tag only so that our form get submited -->
+                            <div class="form_group">
+                                <button class="button button-green">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer" id="footer">
+            <div class="footer_logo-box">
+                <img src="image/logo.png" alt="logo" class="footer_logo">
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer_navigation">
+                        <ul class="footer_list">
+                            <li class="footer_item"><a href="#" class="footer_link">About company</a></li>
+                            <li class="footer_item"><a href="#" class="footer_link">Carrers</a></li>
+                            <li class="footer_item"><a href="#" class="footer_link">Terms</a></li>
+                            <li class="footer_item"><a href="#" class="footer_link">Privacy policy</a></li>
+                            <li class="footer_item"><a href="#" class="footer_link">Contact us</a></li>
+                            <br><br>
+                            <li class="footer_item"><a href="https://www.facebook.com/shivay.bhatt" class="footer_link">Facebook<img src="image/facebook.png" class="footer_link-image"></a></li>
+                            <li class="footer_item"><a href="https://www.linkedin.com/in/deepak-bhatt-b7959817b/" class="footer_link">Linkdin<img src="image/linkedin.png" class="footer_link-image"></a></li>
+                            <li class="footer_item"><a href="https://github.com/deathook007" class="footer_link">Github<img src="image/github.png" class="footer_link-image"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer_copyright">
+                        <a href="#" class="footer_link"> Copyright &copy; 2020 by DEEPAK BHATT</a>. UNDER PRODUCTION
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <div class="center-uclass marginbottom-small">
+                    <h2 class="section-heading">Uttarakhand Blog and Location
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h2 class="heading-ter marginbottom-small">Uttarakhand Blog</h2>
+                        <p class="paragraph">It is said that when the mountains call, you must pack your bags and Go. Especially if it is the "LAND OF GODS" that beckons you. Most travellers claim that describing Uttarakhand tourism is difficult owing to its varied landscapes,
+                            which changes very dramatically as you move from one town to another. Where the holy towns are centred around River Ganga, the valley of Dehradun is surrounded by thick forests and the mesmerising hill station of Kausani promises
+                            rows of vibrant meadows. For travellers who enjoy lesser-known, offbeat destinations – Uttarakhand is a treasure to explore.
+                        </p>
+                        <a href="#section-detail" class="button button-green">Book Now!</a>
+                    </div>
+                    <div class="col-1-of-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55511.22544601733!2d80.19588168700781!3d29.590555892370972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a125c00088dd51%3A0x2b781d30a1523c63!2sPithoragarh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1594240419874!5m2!1sen!2sin"
+                            class="map" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+                    </div>
+                </div>
+                <a href="#section-about" class="popup-close">&times;</a>
+                <!-- Croos sign by &times; -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

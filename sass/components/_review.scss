@@ -1,0 +1,78 @@
+.review {
+    width: 75%;
+    background-color: rgba($color-white, .8);
+    // To make review box in middle
+    margin: 0rem auto;
+    padding: 4rem;
+    // Extra padding due to transform
+    padding-left: 9rem;
+    // Large shadow look cool in content
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    font-size: $font-default;
+    transform: skewX(-12deg);
+    // Direct child technique not work because multiple transform not allowed yet in css
+    margin-bottom: 8rem;
+    @include respond(tab-port) {
+        width: 100%;
+    }
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+    &_figure {
+        // Height and width are MUST for shape-outside property
+        width: 16rem;
+        height: 16rem;
+        // Make the content flow left MUST in order to make shape-outside property work
+        float: left;
+        // To make the content flow in shape a vector shape circlr(size at position of centre)
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        // To make it circle
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        // To provide spacing with float use transform
+        //Since This transform takes pricidence therefore multiple skew not applied to fix add skew 
+        transform: translateX(-3rem) skew(12deg);
+        position: relative;
+        // Skewing all direct child not work therefore skew text and all it on transform of figure
+        // &>* {
+        //     transform: skewX(12deg);
+        // }
+        @include respond(phone) {
+            transform: translateX(-3rem) skewX(0);
+        }
+        overflow: hidden;
+    }
+    &_image {
+        height: 100%;
+        transform: translateX(-1rem) scale(1.4);
+        transition: all .6s;
+        &-cap {
+            @include center;
+            // Text should be in center
+            text-align: center;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: .1rem;
+            opacity: 0;
+            transition: all .6s;
+            transform: skewX(12deg);
+            @include respond(phone) {
+                transform: skewX(0);
+            }
+            // **If there is shaking glich or any glitch use backface-visibility**
+        }
+    }
+    &:hover &_image-cap {
+        opacity: 1;
+        // Remember to use same formate of transform: translate as before in opacity 0
+        transform: translate(-50%, -50%);
+    }
+    &:hover &_image {
+        transform: translateX(-2rem) scale(1);
+        // Learning **filter** above 100% make brighter lower make darker
+        //filter: blur(3px) brightness(80%); //Not Working As Expected!
+    }
+}

@@ -1,0 +1,123 @@
+//About section
+.section-about {
+    background-color: $color-light-gray;
+    padding: 15rem 0;
+    margin-top: -15vh;
+    @include respond(tab-land) {
+        padding: 20rem 5rem;
+    }
+    @include respond(tab-port) {
+        padding: 22rem 5rem;
+    }
+    @include respond(phone) {
+        padding: 20rem 0 15rem 0;
+    }
+}
+
+//Feature section
+.section-feature {
+    padding: 20rem 0;
+    // Setting backgroung image of section-feature part
+    background-image: linear-gradient(to right, $color-primary, $color-secondary), url(../image/Feature.jpg);
+    background-size: cover;
+    // Skew the entire section in Y axix
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+    // Select every *direct* child of section-feature class
+    &>* {
+        // Deskew in Y axis
+        transform: skewY(7deg);
+    }
+    @include respond(tab-land) {
+        padding: 20rem 2rem;
+    }
+    @include respond(tab-port) {
+        padding: 12rem 20rem;
+    }
+    @include respond(phone) {
+        padding: 10rem 5rem;
+    }
+}
+
+//Tour section
+.section-tour {
+    background-color: $color-light-gray;
+    padding: 23rem 0 18rem 0;
+    margin-top: -10rem;
+    @include respond(tab-land) {
+        padding: 20rem 2rem;
+    }
+    @include respond(tab-port) {
+        padding: 20rem 15rem;
+    }
+    @include respond(phone) {
+        padding: 20rem 2rem;
+    }
+}
+
+//Review section
+.section-review {
+    padding: 18rem 0 20rem 0;
+    // Relative to video class position absolute
+    position: relative;
+    margin-top: -15rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+    @include respond(tab-port) {
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    }
+}
+
+// Image section
+.section-image {
+    background-color: $color-light-gray;
+    padding: 20rem 0 10rem 0;
+    margin-top: -17rem;
+    @include respond(tab-land) {
+        padding: 20rem 2rem 10rem 2rem;
+    }
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+}
+
+//Detail section
+.section-detail {
+    background-image: linear-gradient(to right, $color-primary, $color-secondary), url(../../image/Test.jpg);
+    background-size: cover;
+    padding: 10rem 0 10rem 0;
+    @include respond(phone) {
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+.detailbox {
+    // Solid linear gradient above image and we can also **specify Angle, At %of time with gradient**
+    background-image: linear-gradient(100deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 50%, transparent 50%), url(../../image/Test.jpg);
+    background-size: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+    //Reather of using clip path in other element we use **Solid Gradient**
+    &_form {
+        width: 50%;
+        padding: 6rem;
+        @include respond(tab-land) {
+            width: 60%;
+        }
+        @include respond(tab-port) {
+            width: 100%;
+        }
+        @include respond(phone) {
+            padding: 4rem;
+        }
+    }
+    @include respond(tab-land) {
+        margin: 0 2rem;
+        background-image: linear-gradient(100deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 60%, transparent 60%), url(../../image/Test.jpg);
+        background-size: cover;
+    }
+    @include respond(tab-port) {
+        margin: 0 2rem;
+        background-image: linear-gradient(to right, rgba($color-white, .9), rgba($color-white, .9)), url(../../image/Test.jpg);
+        background-size: cover;
+    }
+}

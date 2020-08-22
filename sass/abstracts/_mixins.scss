@@ -1,0 +1,53 @@
+// Since we used float in grid system due to which height of row collapse and become zero_to fix this problem we use clearfix mixin
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin center {
+    // Relative to figure containner
+    position: absolute;
+    // Making text center many times used this code *IMP 20% to make little down!
+    top: 50%;
+    left: 50%;
+    /* We have to use transform property in css to shift box to middle */
+    /* Shift x% to top and left of the same element */
+    transform: translate(-50%, -50%);
+}
+
+//Responsive mixin manager
+//Here em is used and rem queries are not affected by root font size
+//1em = 16px
+@mixin respond($breakpoint) {
+    @if $breakpoint==tab-land {
+        @media only screen and (max-width: 75em) {
+            //1em = 9px needed
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 56.25em) {
+            //1em = 8px needed
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 37.5em) {
+            //1em = 5px needed
+            @content
+        }
+        ;
+    }
+    @if $breakpoint==big-desk {
+        @media only screen and (min-width: 112.5em) {
+            //1em =12px needed
+            @content
+        }
+        ;
+    }
+}

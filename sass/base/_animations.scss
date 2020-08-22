@@ -1,0 +1,48 @@
+/* Using animation for heading 
+   Browsers are optimised for two animation properties_ opacity and transform*/
+
+@keyframes moveinleft {
+    0% {
+        opacity: 0;
+        transform: translate(-15rem);
+    }
+    80% {
+        opacity: 0.8;
+        transform: translate(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinright {
+    0% {
+        opacity: 0;
+        transform: translate(10rem);
+    }
+    80% {
+        transform: translate(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* Button animation */
+
+@keyframes moveinbottom {
+    0% {
+        opacity: 0;
+        transform: translateY(8rem);
+    }
+    80% {
+        transform: translateY(-.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

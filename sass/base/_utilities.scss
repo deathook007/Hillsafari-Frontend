@@ -1,0 +1,49 @@
+// Inline block are treated as text by parent class_center utility class
+.center-uclass {
+    text-align: center !important;
+}
+
+.marginbottom-large {
+    margin-bottom: 6rem !important;
+    @include respond(tab-port) {
+        margin-bottom: 5rem !important;
+    }
+    @include respond(phone) {
+        margin-bottom: 4rem !important;
+    }
+}
+
+.marginbottom-medium {
+    margin-bottom: 3rem !important;
+    @include respond(phone) {
+        margin-bottom: 2rem !important;
+    }
+}
+
+.marginbottom-small {
+    margin-bottom: .5rem !important;
+}
+
+.u-margin-top-small {
+    margin-top: 8rem !important;
+}
+
+.u-margin-top-large {
+    margin-top: 10rem !important;
+}
+
+.u-margin-top-huge {
+    margin-top: 90rem !important;
+    @include respond(tab-port) {
+        margin-top: 120rem !important;
+    }
+    @include respond(phone) {
+        margin-top: 110rem !important;
+    }
+}
+
+//See more card button
+.button-uclass {
+    margin-top: 3rem !important;
+    margin-left: 19rem !important;
+}
