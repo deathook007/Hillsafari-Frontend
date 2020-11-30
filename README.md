@@ -10,7 +10,40 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 - Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
 
-## ScreenShots Below👇👇👇
+## ScreenShots Below👇👇
+
+- Front Page
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__FrontView.png)
+
+- Navigation Bar
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__NavBar.png)
+
+- Navigation Map
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Blog.png)
+
+- User Benifits
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BookingPage.png)
+
+- Reviews
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Review.png)
+
+- Tour cards
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__TourCards.png)
+
+- Gallery
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
+
+- Booking Page
+
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BookingPage.png)
+
 
 ## Overview
 - The website is made fully responsive without using any framework!
@@ -19,7 +52,7 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 -The complete advance css properties to showcase the skills and deep understanding of css3 and npm to reduce size and complexity.
 
-### There are many popular practices used:
+## Popular Practices Used
 - Font transformation on zoom-in zoom-out.
 
 - Css3 and sass with The Model-View-Controller (MVC) architectural model.
@@ -36,14 +69,14 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 - Cross-browser compatibility.
 
-## Make changes: 
+## How To Run
 - Clone the repo and install npm 
 ```
 npm install
 npm run start
 npm run build:css
 ```
-## Improvements required:
+## Improvements Required
 - Working on js for nav-bar and nodde-js, mongoose and mongo-db for back end.
 
 - Backend not added yet!
