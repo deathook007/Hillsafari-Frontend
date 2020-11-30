@@ -10,15 +10,36 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 - Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
 
+## Overview 
+- The website is made fully responsive without using any framework!
+
+- Applied all css knowledge without using grids and flexbox. Only hard cooded css3 with sass and html5 with beautifull animations.
+
+- The complete advance css properties to showcase the skills and deep understanding of css3 and npm to reduce size and complexity.
+
+### Common Practices Used
+
+- Font transformation on zoom-in zoom-out.
+
+- Css3 and sass with The Model-View-Controller (MVC) architectural model.
+
+- Responsive images and design.
+
+- Advance css3 properties with organised syntax.
+
+- More the comments easier the code to understand.
+
+- Reusable and redable code for every element.
+
+- 2D and 3D graphics with graphic design and typography.
+
+- Cross-browser compatibility.
+
 ## ScreenShots Below👇👇
 
 - Front Page
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__FrontView.png)
-
-- Navigation Bar
-
-![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__NavBar.png)
 
 - Navigation Map
 
@@ -39,35 +60,6 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 - Gallery
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
-
-- Booking Page
-
-![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BookingPage.png)
-
-
-## Overview
-- The website is made fully responsive without using any framework!
-
-- Applied all css knowledge without using grids and flexbox. Only hard cooded css3 with sass and html5 with beautifull animations.
-
--The complete advance css properties to showcase the skills and deep understanding of css3 and npm to reduce size and complexity.
-
-## Popular Practices Used
-- Font transformation on zoom-in zoom-out.
-
-- Css3 and sass with The Model-View-Controller (MVC) architectural model.
-
-- Responsive images and design.
-
-- Advance css3 properties with organised syntax.
-
-- More the comments easier the code to understand.
-
-- Reusable and redable code for every element.
-
-- 2D and 3D graphics with graphic design and typography.
-
-- Cross-browser compatibility.
 
 ## How To Run
 - Clone the repo and install npm 
