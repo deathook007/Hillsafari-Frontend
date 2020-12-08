@@ -17,7 +17,7 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 - The complete advance css properties to showcase the skills and deep understanding of css3 and npm to reduce size and complexity.
 
-### Common Practices Used
+## Common Practices Used
 
 - Font transformation on zoom-in zoom-out.
 
@@ -61,8 +61,8 @@ You can visit https://hillsafari.000webhostapp.com/ to have a first look at my w
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
 
-## How To Run
-- Clone the repo and install npm 
+## Installation
+- Clone the repo and type following commands in terminal after opening the vs code
 ```
 npm install
 npm run start
