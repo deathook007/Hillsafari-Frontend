@@ -1,5 +1,5 @@
 # HillSafari 🌄
-- A Fully Responsive Static Website For Promoting Tourism In Hills Like Uttrakhand
+- A Fully Responsive Static Website for promoting tourism hills like Uttrakhand
 
 'Due to file size limit a video is not uploaded in repo'
 You can visit https://hillsafari.000webhostapp.com/ to have a first look at my work. Thanks!!
