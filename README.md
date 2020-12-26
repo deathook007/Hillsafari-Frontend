@@ -3,16 +3,14 @@
 
 - Pack your bags. We’re going on vacation!
 
-- That’s exactly what an effective travel website should make you feel. It should activate the travel bug with vibrant imagery and vivid copy. And while photos can do a lot of the work in inspiring visitors, a travel site can’t accomplish its purpose without great web design.
+That’s exactly what an effective travel website should make you feel. It should activate the travel bug with vibrant imagery and vivid copy. And while photos can do a lot of the work in inspiring visitors, a travel site can’t accomplish its purpose without great web design.
 
-- Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
+Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
 
 ## Overview 
 - The website is made fully responsive without using any framework!
 
-- Applied all css knowledge without using grids and flexbox. Only hard cooded css3 with sass and html5 with beautifull animations.
-
-- The complete advance css properties to showcase the skills and deep understanding of css3 and npm to reduce size and complexity.
+- Applied all css knowledge without using grids and flexbox.
 
 ## ScreenShots Below👇👇
 
@@ -48,15 +46,9 @@
 
 - Responsive images and design.
 
-- Advance css3 properties with organised syntax.
-
-- More the comments easier the code to understand.
+- Advance css3 properties.
 
 - Reusable and redable code for every element.
-
-- 2D and 3D graphics with graphic design and typography.
-
-- Cross-browser compatibility.
 
 ## Installation
 - Clone the repo and type following commands in terminal after opening the vs code
@@ -65,8 +57,4 @@ npm install
 npm run start
 npm run build:css
 ```
-## Improvements Required
-- Working on js for nav-bar and nodde-js, mongoose and mongo-db for back end.
-
-- Backend not added yet!
 
