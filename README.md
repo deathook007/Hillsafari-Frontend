@@ -24,7 +24,7 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 - User Benifits
 
-![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BookingPage.png)
+![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BenifitSection.png)
 
 - Reviews
 
