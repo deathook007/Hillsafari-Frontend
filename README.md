@@ -12,9 +12,6 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 - Applied all css knowledge without using grids and flexbox.
 
-<br>
-<br>
-
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/usage.png)
 ## ScreenShots Below👇👇
 
@@ -42,9 +39,6 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
 
-<br>
-<br>
-
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/license.png)
 ## Common Practices Used
 
@@ -57,9 +51,6 @@ Web design plays a major role in visitors’ first impressions of a business. In
 - Advance css3 properties.
 
 - Reusable and redable code for every element.
-
-<br>
-<br>
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/install.png)
 ## Install
