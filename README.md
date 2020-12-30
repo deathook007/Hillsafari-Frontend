@@ -1,4 +1,4 @@
-# HillSafari 🌄
+# hillSafari 🌄
 - A Fully Responsive Static Website for promoting tourism hills like Uttrakhand
 
 - Pack your bags. We’re going on vacation!
