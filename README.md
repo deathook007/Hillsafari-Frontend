@@ -12,6 +12,10 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 - Applied all css knowledge without using grids and flexbox.
 
+<br>
+<br>
+
+![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/usage.png)
 ## ScreenShots Below👇👇
 
 - Front Page
@@ -38,6 +42,10 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
 
+<br>
+<br>
+
+![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/license.png)
 ## Common Practices Used
 
 - Font transformation on zoom-in zoom-out.
@@ -50,7 +58,11 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 - Reusable and redable code for every element.
 
-## Installation
+<br>
+<br>
+
+![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/install.png)
+## Install
 - Clone the repo and type following commands in terminal after opening the vs code
 ```
 npm install
