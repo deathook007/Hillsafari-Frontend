@@ -54,12 +54,12 @@ Web design plays a major role in visitors’ first impressions of a business. In
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/install.png)
 # Install
-- Clone the repo and type following commands in terminal after opening the vs code
-```
-npm install
-npm run start
-npm run build:css
-```
+Clone the repo and type following commands in terminal after opening the directory in IDE
+   1. Install the necessary dependencies from npm by doing ``` npm install ``` in root directory.
+   2. Use ``` npm run start ``` to start the functionality.
+   3. use ``` npm run build:css ``` to build the css and start the server at local host 3030
+   4. Enjoy the design !
+   
 # Usage
 
 Educational purpose :)
