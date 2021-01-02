@@ -1,4 +1,4 @@
-# Hill Safari 🌄
+# Hill Safari 
 
 - A Fully Responsive Static Website for promoting tourism hills like Uttrakhand
 
