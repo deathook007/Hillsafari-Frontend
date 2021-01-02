@@ -1,4 +1,5 @@
-# hillSafari 🌄
+# Hill Safari 🌄
+
 - A Fully Responsive Static Website for promoting tourism hills like Uttrakhand
 
 - Pack your bags. We’re going on vacation!
@@ -7,42 +8,38 @@ That’s exactly what an effective travel website should make you feel. It shoul
 
 Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
 
-## Overview 
+# Description
 - The website is made fully responsive without using any framework!
 
 - Applied all css knowledge without using grids and flexbox.
 <br>
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/usage.png)
-## ScreenShots Below👇👇
+# ScreenShots Below 👇
 
-- Front Page
+#### Front Page -
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__FrontView.png)
 
-- Navigation Map
-
-![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Blog.png)
-
-- User Benifits
+#### User Benifits -
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__BenifitSection.png)
 
-- Reviews
+#### Reviews -
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Review.png)
 
-- Tour cards
+#### Tour cards -
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__TourCards.png)
 
-- Gallery
+#### Gallery -
 
 ![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__Gallery.png)
 <br>
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/license.png)
-## Common Practices Used
+# Features
 
 - Font transformation on zoom-in zoom-out.
 
@@ -56,11 +53,15 @@ Web design plays a major role in visitors’ first impressions of a business. In
 <br>
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/install.png)
-## Install
+# Install
 - Clone the repo and type following commands in terminal after opening the vs code
 ```
 npm install
 npm run start
 npm run build:css
 ```
+# Usage
+
+Educational purpose :)
+
 
