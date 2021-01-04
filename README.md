@@ -63,6 +63,6 @@ Clone the repo and type following commands in terminal after opening the directo
   
 # Usage
 
-Educational purpose :)
+Educational purpose/ Project
 
 
