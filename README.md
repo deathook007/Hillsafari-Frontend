@@ -1,6 +1,6 @@
 # Hill Safari 🌄 
 
-- A Fully Responsive Static Website for promoting tourism hills like Uttrakhand
+- A Fully Responsive Static landing page for promoting tourism hills like Uttrakhand
 
 - Pack your bags. We’re going on vacation!
 
