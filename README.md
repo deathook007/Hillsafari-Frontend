@@ -27,9 +27,9 @@ Clone the repo and type following commands in terminal after opening the directo
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/usage.png)
 # ScreenShots Below 👇
 
-#### Front Page -
+#### Small Tour -
 
-![screenshot](https://github.com/deathook007/HillSafari/blob/master/image/Hill%20Safari%20__FrontView.png)
+![screenshot](https://github.com/deathook007/Hillsafari/blob/master/image/HillSafari.gif)
 
 #### User Benifits -
 
