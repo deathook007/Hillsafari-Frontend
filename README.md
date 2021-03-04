@@ -50,19 +50,18 @@ Clone the repo and type following commands in terminal after opening the directo
 
 ![screenshot](https://github.com/deathook007/cli-boilerplates/blob/master/Image%20-%20quick%20use/license.png)
 # Features
+- Advance hover effects in buttons, cards and form.
+
+- Custom checkbox button.
 
 - Font transformation on zoom-in zoom-out.
 
-- Css3 and sass with The Model-View-Controller (MVC) architectural model.
+- Model-View-Controller (MVC) architectural model applied!
 
-- Responsive images and design.
+- Responsive images and design :)
 
-- Advance css3 properties.
+- Advance css3 properties like clip, media query and animation.
 
 - Reusable and redable code for every element.
-  
-# Usage
-
-Educational purpose/ Project
 
 
