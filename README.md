@@ -3,7 +3,7 @@
 #### Small Tour video of website
 ![screenshot](https://github.com/deathook007/Hillsafari/blob/master/image/HillSafari.gif)
 
-- A <b>Fully Responsive</b> static landing page for promoting tourism hills.
+- A <b>Fully Responsive</b> static landing page for promoting tourism in the hills.
 
 - Pack your bags. <b>We’re going on vacation</b>!
 
