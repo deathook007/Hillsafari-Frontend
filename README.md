@@ -1,18 +1,24 @@
-# Hill Safari 🏕️
+# HillSafari | <i>Go where you feel most alive :)</i>
 
-- A Fully Responsive Static landing page for promoting tourism hills like Uttrakhand.
+#### Small Tour video of website
+![screenshot](https://github.com/deathook007/Hillsafari/blob/master/image/HillSafari.gif)
 
-- Pack your bags. We’re going on vacation :)
+- A <b>Fully Responsive</b> static landing page for promoting tourism hills.
 
-That’s exactly what an effective travel website should make you feel. It should activate the travel bug with vibrant imagery and vivid copy. And while photos can do a lot of the work in inspiring visitors, a travel site can’t accomplish its purpose without great web design.
+- Pack your bags. <b>We’re going on vacation</b>!
+
+##### That’s exactly what an effective travel website should make you feel. 
+It should activate the travel bug with vibrant imagery and vivid copy. And while photos can do a lot of the work in inspiring visitors, a travel site can’t accomplish its purpose without great web design.
 
 # Description
 
 Web design plays a major role in visitors’ first impressions of a business. In fact, in one study, when participants were asked why they distrusted a website, 94% of the comments were about design.
 
-- The website is made fully responsive without using any framework!
+- The website is made fully responsive <b>without using any framework in first place.</b>
 
-- Applied all css knowledge without using grids and flexbox.
+- Pure basis CSS3 and SCSS is used for learning purpose.
+
+- No fluid layout used for responsiveness like grids and flexbox.
 
 # Install
 
@@ -24,19 +30,21 @@ Clone the repo and type following commands in terminal after opening the directo
 
 # Features
 
-- Advance hover effects in buttons, cards and form.
+- Model-View-Controller <b>(MVC) architectural model</b> applied!
+
+- Font transformation on zoom-in zoom-out (3R Rule applied).
+
+- Advance CSS3 animations and hover effects in buttons, cards and form.
+
+- Advance css3 properties like clip, media query and animation used.
+
 - Custom checkbox button.
-- Font transformation on zoom-in zoom-out.
-- Model-View-Controller (MVC) architectural model applied!
-- Responsive images and design :)
-- Advance css3 properties like clip, media query and animation.
+
+- Responsive images and design using pixel density selection and new <picture>
+
 - Reusable and redable code for every element.
 
 # ScreenShots Below 👇
-
-#### Small Tour -
-
-![screenshot](https://github.com/deathook007/Hillsafari/blob/master/image/HillSafari.gif)
 
 #### User Benifits -
 
