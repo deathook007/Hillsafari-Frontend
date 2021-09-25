@@ -37,17 +37,11 @@ Clone the repo and type following commands in terminal after opening the directo
 # Features and Properties
 
 - Model-View-Controller <b>(MVC) architectural model</b> applied!
-
 - Font transformation on zoom-in zoom-out (3R Rule applied).
-
 - Advance CSS3 animations and hover effects in buttons, cards and form.
-
 - Advance css3 properties like clip, media query and animation used.
-
 - Custom checkbox button.
-
 - Responsive images and design using pixel density selection and new <picture>
-
 - Reusable and redable code for every element.
 
 ## ScreenShots Below 👇
