@@ -44,7 +44,7 @@ Clone the repo and type following commands in terminal after opening the directo
 - Responsive images and design using pixel density selection and new <picture>
 - Reusable and redable code for every element.
 
-## ScreenShots Below 👇
+### ScreenShots Below 👇
 
 #### User Benifits Section-
 
